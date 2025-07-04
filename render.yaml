@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: meu-n8n
+    env: docker
+    plan: free
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "crdp"
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "pms04031994"
+      - key: N8N_PORT
+        value: "5678"
